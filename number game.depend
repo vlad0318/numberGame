@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1587670194 source:c:\users\vladyslav\desktop\my-first-project\practice\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1588053582 source:c:\users\vladyslav\desktop\my-first-project\number game\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+
