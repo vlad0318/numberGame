@@ -21,6 +21,7 @@ int main()
         cin >> again;
         if (again=='y'||again=='Y')
             {
+            int tries = 0;
             long long int seed, randome, number;
             seed =time(0);
             srand(seed);
@@ -29,6 +30,7 @@ int main()
             cout << "when you win enter -1\n";
                         while (randome <= 100)
 {
+                            int times;
                             cout << "what is your guess";
                             cin >> number;
                             if (number > 100)
@@ -42,8 +44,11 @@ int main()
                                     cout << "too high\n";
                                 else
                                     cout << "you won!!!!!!!!\a\n";}
+                                    tries++;
+                            times = tries - 1;
                             if (number == -1)
                             {
+                                cout << "you took " << times << " tries\n";
                                 break;
                             }
                             randome = randome;
