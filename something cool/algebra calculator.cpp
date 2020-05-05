@@ -2,14 +2,25 @@
 #include <cmath>
 #include <string>
 using namespace std;
+void sap()
+{
+    double base, hight, area, n;
+    cout << "what is the slant hight\n";
+    cin >> hight;
+    cout << "what is the base\n";
+    cin >> base;
+    n = 0.5;
+    area = 4 * (n * base * hight) + (base * base);
+    cout << "the surface area of this pyramid is " << area << "\n";
+}
 void sar()
 {
     double hight, wigth, length ,area;
-    cout << "what is the hight of the cube\n";
+    cout << "what is the hight of the rectangular solid\n";
     cin >> hight;
-    cout << "what is the wigth of the cube\n";
+    cout << "what is the wigth of the rectangular solid\n";
     cin >> wigth;
-    cout << "what is the length of the cube\n";
+    cout << "what is the length of the rectangular solid\n";
     cin >> length;
     area = (2 * length * wigth) + (2 * wigth * hight) + (2 * length * hight);
     cout << "the surface area of the rectangual solid is " << area << "\n";
@@ -195,6 +206,7 @@ int main()
 {
     string l, i;
     l = "vlad0318";
+    cout << "sap means find the surface area of a pyramid\n";
     cout << "sar means find the surface area of a rectangular solid\n";
     cout << "ccr means find the circonferance of a circle using radius\n";
     cout << "ccd means find the circonferance of a circle using diameter\n";
@@ -210,8 +222,8 @@ int main()
     cout << "pt means find the perimiter of a triangle\n";
     cout << "pq means find the perimiter of a quadrelateral\n";
     cout << "ftd means find the x of a triangle\n";
-    cout << "c means from celcius to fehrenheite\n";
-    cout << "f from from fehrenhight to celcius\n";
+    cout << "f means from celcius to fehrenheite\n";
+    cout << "c from from fehrenhight to celcius\n";
     cout << "rd finds the diameter using radius\n";
     cout << "dr finds the radius using diameter\n\n";
     cout << "what is the password\n";
@@ -260,6 +272,8 @@ int main()
                 dr();
             else if (p == "sar")
                 sar();
+            else if (p == "sap")
+                sap();
             else
                 cout << "invalid imput\n";
             cout << "\nagain ?\n";
