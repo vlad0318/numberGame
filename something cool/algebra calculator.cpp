@@ -2,6 +2,22 @@
 #include <cmath>
 #include <string>
 using namespace std;
+void sar()
+{
+    double hight, wigth, length ,area;
+    cout << "what is the hight of the cube\n";
+    cin >> hight;
+    cout << "what is the wigth of the cube\n";
+    cin >> wigth;
+    cout << "what is the length of the cube\n";
+    cin >> length;
+    area = (2 * length * wigth) + (2 * wigth * hight) + (2 * length * hight);
+    cout << "the surface area of the rectangual solid is " << area << "\n";
+}
+void lac()
+{
+
+}
 void rd()
 {
     double radius, diameter;
@@ -20,15 +36,15 @@ void dr()
     cout << "the answer is " << radius;
 
 }
-void ccr ()
+void ccr()
 {
-   double radius, circonferance;
+    double radius, circonferance;
     cout << "what is the radius\n";
     cin >> radius;
     circonferance = radius * 2 * 3.14159;
     cout << "the answer is " << circonferance;
 }
-void ccd ()
+void ccd()
 {
     double diameter, circonferance;
     cout << "what is the diameter\n";
@@ -41,18 +57,18 @@ void ac()
     double area, radius;
     cout << "what is the radius of the circle";
     cin >> radius;
-    area = 3.14159 * pow(radius,2);
+    area = 3.14159 * pow(radius, 2);
     cout << "the area is " << area << endl;
 }
-void pow ()
+void pow()
 {
     double number, power, answer;
     cout << "what is the number";
-    cin >>number;
+    cin >> number;
     cout << "to what power";
-    cin >>power;
-    answer = pow (number,power);
-    cout << "the answer is "<< answer << endl;
+    cin >> power;
+    answer = pow(number, power);
+    cout << "the answer is " << answer << endl;
 
 }
 void dc()
@@ -62,85 +78,85 @@ void dc()
     cin >> numirator;
     cout << "what is the denominator";
     cin >> denominator;
-    cout << "The decimal value is "<< (numirator / denominator)<< endl;
+    cout << "The decimal value is " << (numirator / denominator) << endl;
 }
 void ar()
 {
     double length, width, area;
-    cout << "What is the length of the rectangle?" ;
-    cin >>length;
+    cout << "What is the length of the rectangle?";
+    cin >> length;
     cout << "what is the width of the rectangle? ";
     cin >> width;
     area = length * width;
-    cout << "the area of the rectangle is "<< area << endl;
+    cout << "the area of the rectangle is " << area << endl;
 }
-void sq ()
+void sq()
 {
     double number, result;
     cout << "what is the number";
     cin >> number;
     result = sqrt(number);
-    cout << "the square root of "<< number << " is " << result << endl;
+    cout << "the square root of " << number << " is " << result << endl;
 }
-void at ()
+void at()
 {
     double hieght, base, area;
-    cout << "What is the hieght of the triangle?" ;
-    cin >>hieght;
+    cout << "What is the hieght of the triangle?";
+    cin >> hieght;
     cout << "what is the base of the triangle? ";
     cin >> base;
     area = hieght * (base * .5);
-    cout << "the area of the triangle is "<< area << endl;
+    cout << "the area of the triangle is " << area << endl;
 }
-void ap ()
+void ap()
 {
     double hieght, base, area;
-    cout << "What is the hieght of the paralelogram?" ;
-    cin >>hieght;
+    cout << "What is the hieght of the paralelogram?";
+    cin >> hieght;
     cout << "what is the base of the paralelogram? ";
     cin >> base;
     area = hieght * base;
-    cout << "the area of the paralelogram is "<< area << endl;
+    cout << "the area of the paralelogram is " << area << endl;
 }
-void atr ()
+void atr()
 {
     double hieght, base, base2, area;
-    cout << "What is the hieght of the trapizoid?" ;
-    cin >>hieght;
+    cout << "What is the hieght of the trapizoid?";
+    cin >> hieght;
     cout << "what is the base of the trapizoid? ";
     cin >> base;
-     cout << "what is the base2 of the trapizoid? ";
+    cout << "what is the base2 of the trapizoid? ";
     cin >> base2;
-    area = hieght * (base+base2) /2;
-    cout << "the area of the trapizoid is "<< area << endl;
+    area = hieght * (base + base2) / 2;
+    cout << "the area of the trapizoid is " << area << endl;
 }
 void pr()
 {
-  double length, width, primiminter;
-    cout << "What is the length of the rectangle?" ;
-    cin >>length;
+    double length, width, primiminter;
+    cout << "What is the length of the rectangle?";
+    cin >> length;
     cout << "what is the width of the rectangle? ";
     cin >> width;
-    primiminter = length *2 + width *2;
-    cout << "the area of the rectangle is "<< primiminter << endl;
+    primiminter = length * 2 + width * 2;
+    cout << "the area of the rectangle is " << primiminter << endl;
 }
 void pt()
 {
     double length, width, side, primiminter;
-    cout << "What is the side1 of the triangle?" ;
-    cin >>length;
+    cout << "What is the side1 of the triangle?";
+    cin >> length;
     cout << "what is the side2 of the triangle? ";
     cin >> width;
     cout << "what is the side3 of the triangle? ";
     cin >> side;
-    primiminter = length + width +side;
-    cout << "the area of the triangle is "<< primiminter << endl;
+    primiminter = length + width + side;
+    cout << "the area of the triangle is " << primiminter << endl;
 }
-void pq ()
+void pq()
 {
     double length, width, side, side2, primiminter;
-    cout << "What is the length of the quadrelateral?" ;
-    cin >>length;
+    cout << "What is the length of the quadrelateral?";
+    cin >> length;
     cout << "what is the width of the quadrelateral? ";
     cin >> width;
     cout << "what is the width of the quadrelateral? ";
@@ -148,22 +164,22 @@ void pq ()
     cout << "what is the width of the quadrelateral? ";
     cin >> side2;
     primiminter = length + width + side + side2;
-    cout << "the area of the quadrelateral is "<< primiminter << endl;
+    cout << "the area of the quadrelateral is " << primiminter << endl;
 }
-void f ()
+void f()
 {
     double celsius;
     cout << "enter celsius";
-    cin >>celsius;
-    cout << "fahrenheit is " <<1.8 * celsius + 32 << endl ;
+    cin >> celsius;
+    cout << "fahrenheit is " << 1.8 * celsius + 32 << endl;
 
 }
-void c ()
+void c()
 {
-double fahrenheit;
-cout << "enter fahrenheit";
-cin >> fahrenheit;
-cout << "celsius is " << 0.5555555 * (fahrenheit - 32)<< endl;
+    double fahrenheit;
+    cout << "enter fahrenheit";
+    cin >> fahrenheit;
+    cout << "celsius is " << 0.5555555 * (fahrenheit - 32) << endl;
 }
 void ftd()
 {
@@ -175,10 +191,11 @@ void ftd()
     answer = 180 - x - y;
     cout << "the answer is " << answer << endl;
 }
-int main ()
+int main()
 {
     string l, i;
     l = "vlad0318";
+    cout << "sar means find the surface area of a rectangular solid\n";
     cout << "ccr means find the circonferance of a circle using radius\n";
     cout << "ccd means find the circonferance of a circle using diameter\n";
     cout << "ac means find the area of a circle\n";
@@ -203,49 +220,51 @@ int main ()
     getline(cin, i);
     if (i == l)
         do {
-                cout << "what problem do you want to solve\n";
-                cin >> p;
-                if (p == "ftd")
-                    ftd();
-                else if (p == "c")
-                    c();
-                else if (p == "f")
-                    f();
-                else if (p == "pq")
-                    pq ();
-                else if (p == "pt")
-                    pt();
-                else if (p == "pr")
-                    pr();
-                else if (p == "atr")
-                    atr();
-                else if (p == "ap")
-                    ap();
-                else if (p == "at")
-                    at();
-                else if (p == "sq")
-                    sq();
-                else if (p == "ar")
-                    ar();
-                else if (p == "dc")
-                    dc();
-                else if (p == "pow")
-                    pow();
-                else if (p == "ac")
-                    ac();
-                else if (p == "ccr")
-                    ccr();
-                else if (p == "ccd")
-                    ccd();
-                 else if (p == "rd")
-                    rd();
-                  else if (p == "dr")
-                    dr();
-                else
-                    cout << "invalid imput\n";
-                cout << "\nagain ?\n";
-                cin >> r;
-        }while (r == 'y');
-        else
-            return 0;
+            cout << "what problem do you want to solve\n";
+            cin >> p;
+            if (p == "ftd")
+                ftd();
+            else if (p == "c")
+                c();
+            else if (p == "f")
+                f();
+            else if (p == "pq")
+                pq();
+            else if (p == "pt")
+                pt();
+            else if (p == "pr")
+                pr();
+            else if (p == "atr")
+                atr();
+            else if (p == "ap")
+                ap();
+            else if (p == "at")
+                at();
+            else if (p == "sq")
+                sq();
+            else if (p == "ar")
+                ar();
+            else if (p == "dc")
+                dc();
+            else if (p == "pow")
+                pow();
+            else if (p == "ac")
+                ac();
+            else if (p == "ccr")
+                ccr();
+            else if (p == "ccd")
+                ccd();
+            else if (p == "rd")
+                rd();
+            else if (p == "dr")
+                dr();
+            else if (p == "sar")
+                sar();
+            else
+                cout << "invalid imput\n";
+            cout << "\nagain ?\n";
+            cin >> r;
+        } while (r == 'y');
+    else
+        return 0;
 }
