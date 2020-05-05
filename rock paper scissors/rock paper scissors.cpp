@@ -5,7 +5,9 @@ using namespace std;
 
 int main()
 {
-	int g, r, s;
+	int g, r, cp, pp;
+	cp = 0;
+	pp = 0;
 	char a;
 	cout << "lets play rock paper scissors\n";
 	while (2 < 3)
@@ -26,16 +28,19 @@ int main()
 		{
 			cout << "you win\n\a";
 			cout << "press y to restart\n";
+			pp++;
 		}
 		else if (g == 2 && r == 1)
 		{
 			cout << "you win\n\a";
 			cout << "press y to restart\n";
+			pp++;
 		}
 		else if (g == 3 && r == 2)
 		{
 			cout << "you win\n\a";
 			cout << "press y to restart\n";
+			pp++;
 		}
 		else if (g == r)
 		{
@@ -44,13 +49,15 @@ int main()
 		}
 		else
 		{
-			cout << "you lose ha ha\n";
+			cout << "you lose\n";
 			cout << "it chose " << r;
 			cout << "\npress y to restart\n";
+			cp++;
 		}
+		cout << "the score is\nplayer points" << pp << "\n computer points " << cp << "\n";
 		cin >> a;
 		if (a == 'y' || a == 'Y')
-			cout << "ok\n";
+			cout << "\n";
 		else
 			return (0);
 	}
